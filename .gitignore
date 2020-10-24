@@ -90,3 +90,7 @@ sympy-plots-for-*.tex/
 
 # xindy
 *.xdy
+
+# vscode
+**/.DS_Store
+**/.vscode/

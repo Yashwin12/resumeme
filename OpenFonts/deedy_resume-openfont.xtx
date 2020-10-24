@@ -1,56 +1,21 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Deedy - One Page Two Column Resume
-% LaTeX Template
-% Version 1.2 (16/9/2014)
-%
-% Original author:
-% Debarghya Das (http://debarghyadas.com)
-%
-% Original repository:
-% https://github.com/deedydas/Deedy-Resume
-%
-% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
-%
-% This template uses several fonts not included with Windows/Linux by
-% default. If you get compilation errors saying a font is missing, find the line
-% on which the font is used and either change it to a font included with your
-% operating system or comment the line out to use the default font.
-% 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 
-% TODO:
-% 1. Integrate biber/bibtex for article citation under publications.
-% 2. Figure out a smoother way for the document to flow onto the next page.
-% 3. Add styling information for a "Projects/Hacks" section.
-% 4. Add location/address information
-% 5. Merge OpenFont and MacFonts as a single sty with options.
-% 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% CHANGELOG:
-% v1.1:
-% 1. Fixed several compilation bugs with \renewcommand
-% 2. Got Open-source fonts (Windows/Linux support)
-% 3. Added Last Updated
-% 4. Move Title styling into .sty
-% 5. Commented .sty file.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% Known Issues:
-% 1. Overflows onto second page if any column's contents are more than the
-% vertical limit
-% 2. Hacky space on the first bullet point on the second column.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
 \documentclass[]{deedy-resume-openfont}
 \usepackage{fancyhdr}
  
 \pagestyle{fancy}
-\fancyhf{}
- 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Footer
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% HACK: http://mirrors.ibiblio.org/CTAN/macros/latex/contrib/fancyhdr/fancyhdr.pdf
+\fancyfoot[C]{Authorized to work in US without any sponsorship. References provided upon request.}
+\renewcommand{\headrulewidth}{0.0pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\usepackage{hyperref}
+\hypersetup{colorlinks = true, breaklinks, urlcolor=Blue, linkcolor=Blue}
+
 \begin{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -65,10 +30,13 @@
 %     TITLE NAME
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\namesection{Debarghya}{Das}{ \urlstyle{same}\href{http://debarghyadas.com}{debarghyadas.com}| \href{http://fb.co/dd}{fb.co/dd}\\
-\href{mailto:deedy@fb.com}{deedy@fb.com} | 607.379.5733 | \href{mailto:dd367@cornell.edu}{dd367@cornell.edu}
-}
 
+\namesection{Yashvin}{Munsadwala}{
+Legal Permanent Resident | 703.395.8905 \\
+\href{mailto:munsadwalayashwin@gmail.com}{\underline{munsadwalayashwin@gmail.com}} | 
+\href{https://www.linkedin.com/in/yashwin-munsadwala}{\underline{linkedin.com/in/yashwin-munsadwala}} |  
+\href{https://github.com/Yashwin12}{\underline{github.com/Yashwin12}}
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %     COLUMN ONE
@@ -81,76 +49,81 @@
 %     EDUCATION
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Education} 
+\section{Education}
+% \subsection{AlgoExpert.io}
+% \descript{\bf Algorithms \& Data Structures}
+% \location{Present | Virtually }
+% \sectionsep
 
-\subsection{Cornell University}
-\descript{MEng in Computer Science}
-\location{Dec 2014 | Ithaca, NY}
-\sectionsep
-
-\subsection{Cornell University}
-\descript{BS in Computer Science}
-\location{May 2014 | Ithaca, NY}
-College of Engineering \\
-Magna Cum Laude\\
-\location{ Cum. GPA: 3.83 / 4.0 \\
-Major GPA: 3.9 / 4.0}
-\sectionsep
-
-\subsection{La Martiniere for Boys}
-\location{Grad. May 2011|  Kolkata, India}
+\subsection{Sarvajanik College of}
+\subsection{Eng. \& Tech. (SCET)}
+\descript{\bf BS in Computer Engineering}
+\location{May 2018 | Surat, India}
+\location{ CGPA: 8.31 / 10.0 }
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     LINKS
+%     CERTIFICATIONS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Links} 
-Facebook:// \href{https://facebook/dd}{\bf dd} \\
-Github:// \href{https://github.com/deedydas}{\bf deedydas} \\
-LinkedIn://  \href{https://www.linkedin.com/in/debarghyadas}{\bf debarghyadas} \\
-YouTube://  \href{https://www.youtube.com/user/DeedyDash007}{\bf DeedyDash007} \\
-Twitter://  \href{https://twitter.com/debarghya_das}{\bf @debarghya\_das} \\
-Quora://  \href{https://www.quora.com/Debarghya-Das}{\bf Debarghya-Das}
+\section{Certifications}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     COURSEWORK
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Coursework}
-\subsection{Graduate}
-Advanced Machine Learning \\
-Open Source Software Engineering \\
-Advanced Interactive Graphics \\
-Compilers + Practicum \\
-Cloud Computing \\
-Evolutionary Computation \\
-Defending Computer Networks \\
-Machine Learning \\
+\subsection{Amazon Web Services (AWS)}
+\descript{\bf AWS Certified Developer Associate}
+\location{Dec 2019 | AWS Center }
+\location{ Score: 919 / 1000 }
 \sectionsep
 
-\subsection{Undergraduate}
-Information Retrieval \\
-Operating Systems \\
-Artificial Intelligence + Practicum \\
-Functional Programming \\
-Computer Graphics + Practicum \\
-{\footnotesize \textit{\textbf{(Research Asst. \& Teaching Asst 2x) }}} \\
-Unix Tools and Scripting \\
+\subsection{MongoDB University }
+\descript{\bf M220JS MongoDB for JS Devs.}
+\location{March 2019 | Virtually }
+\sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     SKILLS
+%     SKILLS 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Skills}
-\subsection{Programming}
-\location{Over 5000 lines:}
-Java \textbullet{}   Shell \textbullet{} Python \textbullet{} Javascript \\
-OCaml \textbullet{} Matlab \textbullet{} Rails \textbullet{} \LaTeX\ \\ 
-\location{Over 1000 lines:}
-C \textbullet{} C++ \textbullet{} CSS \textbullet{} PHP \textbullet{} Assembly \\
-\location{Familiar:}
-AS3 \textbullet{} iOS \textbullet{} Android \textbullet{} MySQL
+\descript{\bf Programming Languages:}
+Java \textbullet{} Javascript \textbullet{} Python \textbullet{} C/C++ \\
+\vspace{1.5mm}
+
+\descript{\bf Web Technologies: }
+ReactJS \textbullet{} Redux \textbullet{} HTML5 \textbullet{} CSS3 \\
+Java Spring Boot \textbullet{} Node.js \textbullet{} axios \\ Google Charts \textbullet{} jQuery  \textbullet{} Mocha.js \\ 
+Karma \textbullet{} Chai.js \textbullet{} Sinon.js \textbullet{} JUnit 
+\vspace{1.5mm}
+
+\descript{\bf Database:}
+Cassandra \textbullet{} MongoDB \textbullet{} MySQL \\ 
+Oracle \textbullet{} Snowflake
+\vspace{1.5mm}
+
+\descript{\bf Collaboration Tools:}
+Jira \textbullet{} ALM \textbullet{} Confluence \textbullet{} Github
+\vspace{1.5mm}
+
+\descript{\bf Microcontroller:}
+Particle Photon \textbullet{} Arduino UNO 
+\vspace{1.5mm}
+
+\descript{\bf Miscellaneous:}
+SonarQube \textbullet{} AppDynamics \textbullet{} Jenkins \\ 
+Pivotal Cloud Foundry(PCF)\textbullet{} APIGEE \\
+MS Visio \textbullet{} AEM \textbullet{} Swagger (openAPI) \\ 
+Alexa Skills Kit \textbullet{} AWS Lambda
+\sectionsep
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %     Interests
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Interests}
+\textbullet{} Algorithms \& Data Structures \\
+\textbullet{} Cloud computing \\
+\textbullet{} Web Development \\
+\textbullet{} Distributed Systems \\
+\textbullet{} IoT \\
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -168,76 +141,78 @@ AS3 \textbullet{} iOS \textbullet{} Android \textbullet{} MySQL
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Experience}
-\runsubsection{Facebook}
-\descript{| Software Engineer }
-\location{Jan 2015 - Present | New York, NY}
-\sectionsep
 
-\runsubsection{Coursera}
-\descript{| KPCB Fellow + Software Engineering Intern }
-\location{June 2014 – Sep 2014 | Mountain View, CA}
+\runsubsection{American Int'l Group (AIG)}
+\descript{| Full Stack Developer }
+\location{Oct 2018 – Present | Houston, USA}
+% \textbf{Noteworthy:} Implemented company wide accepted approach for changing log levels at runtime, injecting real time user monitoring script
+\textbf{Noteworthy:} Suggested and implemented several functionalities like changing log levels at runtime and injecting real time user monitoring script to improve overall system's \textbf{\textit{manageability}} and thus its \textbf{\textit{availability}}
+
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
-\begin{tightemize}\item 52 out of 2500 applicants chosen to be a KPCB Fellow 2014.
-\item Led and shipped Yoda - the admin interface for the new Phoenix platform. 
-\item Full-stack developer - Wrote and reviewed code for JS using Backbone, Jade, Stylus and Require and Scala using Play
+\begin{tightemize}
+\item Designing and developing of the AIG Connext platform - a large-scale distributed system which is one-stop shop for  insurance agents
+\item Placing special emphasis on user experience, performance, extensibility, and automating daily routine tasks
+\item Microservices and Microsites are build using an Agile mindset by using modern industry-adopted Java-based framework and various JavaScript libraries
+\item Testing components in an automated fashion by developing complete unit and integration test cases
+% \item Deploying applications to cloud via PaaS architecture using Continuous Integration \& Continuous Delivery (CI/CD) pipelines
+\item Debugging distributed applications during outages and failures in production
+\item Active role in presenting newly baked functionality to the business stakeholders and system testers 
+
+\item Mentor and companion to a Technology Analyst and an intern for 10+ months
+
 \end{tightemize}
 \sectionsep
 
-\runsubsection{Google}
-\descript{| Software Engineering Intern }
-\location{May 2013 – Aug 2013 | Mountain View, CA}
+\runsubsection{WinR Tech Limited}
+\descript{| Full Stack Developer Intern }
+\location{June 2017 - July 2018 | Surat, India}
+\textbf{Award:} 2\textsuperscript{nd}/40 groups \\
+\textbf{Noteworthy:} Simulated 50 virtual devices via code to perform  \textbf{\textit{load test}} on the system  \\
 \begin{tightemize}
-\item Worked on the YouTube Captions team, in Javascript and Python to plan, to design and develop the full stack to add and edit Automatic Speech Recognition captions. In production.\item Created a backbone.js-like framework for the Captions editor.\end{tightemize}
+\item Led the project; Fabricated hardware for detection of toxins present in the environment and visualized data findings online via an intuitive website
+\item Automated the firmware update, live monitoring and controlling of hardware from a remote location through dashboard 
+\end{tightemize}
 \sectionsep
 
-\runsubsection{Phabricator}
-\descript{| Open Source Contributor \& Team Leader}
-\location{Jan 2013 – May 2013 | Palo Alto, CA \& Ithaca, NY}
+\runsubsection{Larsen \& Toubro (L\&T)}
+\descript{| Database Design Intern}
+\location{June 2017 | Surat, India }
 \begin{tightemize}
-\item Phabricator is used daily by Facebook, Dropbox, Quora, Asana and more.\item I created the Meme generator and more in PHP and Shell.\item Led a team from MIT, Cornell, IC London and UHelsinki for the project.\end{tightemize}
+\item Designed a SQL database schema with optimum level of normalization and relationships that tracked and maintained status of enterprise-wide projects 
+\end{tightemize}
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     RESEARCH
+%     ACTIVITIES
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Activities}
 
-\section{Research}
-\runsubsection{Cornell Robot Learning Lab}
-\descript{| Researcher}
-\location{Jan 2014 – Jan 2015 | Ithaca, NY}
-Worked with \textbf{\href{http://www.cs.cornell.edu/~ashesh/}{Ashesh Jain}} and \textbf{\href{http://www.cs.cornell.edu/~asaxena/}{Prof Ashutosh Saxena}} to create \textbf{PlanIt}, a tool which  learns from large scale user preference feedback to plan robot trajectories in human environments.  
-\sectionsep
-
-\runsubsection{Cornell Phonetics Lab}
-\descript{| Head Undergraduate Researcher}
-\location{Mar 2012 – May 2013 | Ithaca, NY}
-Led the development of \textbf{QuickTongue}, the first ever breakthrough tongue-controlled game with \textbf{\href{http://conf.ling.cornell.edu/~tilsen/}{Prof Sam Tilsen}} to aid in Linguistics research. 
-\sectionsep
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     AWARDS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Awards} 
 \begin{tabular}{rll}
-2014	     & top 52/2500  & KPCB Engineering Fellow\\
-2014	     & 1\textsuperscript{st}/50  & Microsoft Coding Competition, Cornell\\
-2013	     & National  & Jump Trading Challenge Finalist\\
-2013     & 7\textsuperscript{th}/120 & CS 3410 Cache Race Bot Tournament  \\
-2012     & 2\textsuperscript{nd}/150 & CS 3110 Biannual Intra-Class Bot Tournament \\
-2011     & National & Indian National Mathematics Olympiad (INMO) Finalist \\
+\textbf{2020} & Personal & Built Algorithm visualizer\\
+\textbf{2020} & Personal & Collaborated and developed universe lovers\\
+\textbf{2020} & Personal & Developed Journey-weather\\
+\textbf{2020} & AIG & Built systematic \textbf{\href{https://github.com/Yashwin12/roadmap}{\underline{road-map}}} for a web developer\\
+\textbf{2020} & AIG & Board Member for Houston Diversity Council \\
+\textbf{2019 \& 20} & AIG & Event \& Communication Committee for Asian Affinity Network \\
+\textbf{2018} & AIG & Stood 2\textsuperscript{nd} in 3-day Hackathon to create an Alexa Skill\\
+\textbf{2015 \& 18} & SCET & Class Representative \\
 \end{tabular}
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     PUBLICATIONS
+%     PATENT & PUBLICATION
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Publications} 
-\renewcommand\refname{\vskip -1.5cm} % Couldn't get this working from the .cls file
-\bibliographystyle{abbrv}
-\bibliography{publications}
-\nocite{*}
+\section{PATENT \& PUBLICATION}
+\textbf{[1]  Patent:}  Y.Munsadwala \& et al., \textit{A System to Detect & Manage Forest Fire Using a Sensor Assembly Unmanned Aerial Device}. India Patent
+\textbf{\href{http://ipindiaservices.gov.in/Verify/chkCert.aspx?prm1=FzcJYOYg6oIeykt7gV5SlQ==&prm2=z7/Hw8/fLWZbCwfcvn87hA==&prm3=tSdS5P0p+lfIiqWawVgnjw==&prm4=fiJtVpEWolfcfemdhch2CEyNNWdNFT6A8UT0RSVD0zvswtNuWZT/cj9J57mUXSYKPsyXIsUHZOoUJwOlfmO9EA==}{\underline{201921003375}}} (Pending)
 
+\vspace{1.5mm} %5mm vertical space
+\textbf{[2] Publication:} Y.Munsadwala \& et al.: \textit{Identification & Visualization of Hazardous Gases Using IoT}. 4th
+\textbf{\href{https://ieeexplore.ieee.org/document/8777481}{\underline{IEEE International Conference on IoT-SIU}}} 2019, India
+
+\vfill
 \end{minipage} 
-\end{document}  \documentclass[]{article}
+\end{document}  
+
+\documentclass[]{article}
