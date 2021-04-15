@@ -144,10 +144,11 @@ Alexa Skills Kit \textbullet{} AWS Lambda
 \section{Experience}
 
 \runsubsection{American Int'l Group (AIG)}
-\descript{| Full Stack Developer }
+\descript{| Sr. Assoc. Full Stack Developer}
 \location{Oct 2018 – Present | Houston, USA}
+\textbf{Promotion:} \textit{Sr. Assoc. Full Stack Developer} in April '21 from \textit{Full Stack Developer}\\
 % \textbf{Noteworthy:} Implemented company wide accepted approach for changing log levels at runtime, injecting real time user monitoring script
-\textbf{Noteworthy:} Suggested and implemented several functionalities like changing log levels at runtime and injecting real time user monitoring script to improve overall system's \textbf{\textit{manageability}} and thus its \textbf{\textit{availability}}
+\textbf{Noteworthy:} Suggested and implemented several functionalities like changing log levels at runtime and injecting real time user monitoring script to improve overall system's \textbf{\textit{manageability}} and eventually its \textbf{\textit{availability}}
 
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
@@ -167,7 +168,7 @@ Alexa Skills Kit \textbullet{} AWS Lambda
 \runsubsection{WinR Tech Limited}
 \descript{| Full Stack Developer Intern }
 \location{June 2017 - July 2018 | Surat, India}
-\textbf{Award:} 2\textsuperscript{nd}/40 groups \\
+\textbf{Awarded:} 2\textsuperscript{nd}/40 groups \\
 \textbf{Noteworthy:} Simulated 50 virtual devices via code to perform  \textbf{\textit{load test}} on the system  \\
 \begin{tightemize}
 \item Led the project; Fabricated hardware for detection of toxins present in the environment and visualized data findings online via an intuitive website
